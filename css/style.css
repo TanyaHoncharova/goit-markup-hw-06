@@ -227,7 +227,7 @@ body {
     font: roboto;
     background-color: var(--white-color);
     color: var(--accent-color);
-    border: 1px solid var(--white-color)
+    border: 1px solid var(--white-color);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -370,7 +370,7 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
-.checkbox {
+.contract {
     /* display: flex; */
     justify-content: start;
     font-size: 14px;
@@ -381,24 +381,25 @@ body {
 }
 
 .checkbox-input {
-    /* display: flex; */
-    justify-content: start;
-    align-items: center;
-    padding-left: 42px;
-    background: #212121;
-    border: 10px solid black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+ position: absolute;
 }
 
 .link-contract {
     color:var(--accent-color);
     text-decoration-color: var(--accent-color);
 }
-/* .checkbox-svg {
-    display: block;
-     width: 15px;
+.checkbox-svg {
+    display: inline-block;
+    width: 15px;
     height: 15px;
-} */
+}
 
+.checkbox-input:checked+.checkbox-svg {
+    background-color:var(--accent-color);
+}
 .form-btn {
     padding: 10px 55px;
     font-weight: bold;
